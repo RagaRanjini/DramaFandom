@@ -1,0 +1,26 @@
+img{
+    width: 98%;
+    height: 400px;
+    
+}
+p{
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+.col{
+    margin: 20px;
+}
+.error{
+    color:red
+}
+button{
+    width:150px;
+    margin-left: 50px;
+}
+
+.container {
+    overflow-y: auto;
+    height: 300px; 
+  }

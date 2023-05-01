@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { AuthenticationService } from './services/authentication.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DramaFandom';
+  constructor(private as:AuthenticationService,private router:Router){}
+  ngAfterViewInit(){
+    if(!this.as.loginstatus()){
+      this.router.navigate(['authentication'])
+    }
+  }
 }

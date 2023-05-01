@@ -1,0 +1,21 @@
+mat-card{
+    display: inline-block;
+    margin: 25px;
+    width: 250px;
+    height:300px;
+}
+img{
+    width: 98%;
+    height: 200px;
+    margin-left: 1%;
+}
+p{
+    font-size: small;
+    margin-left: 10%;
+}
+mat-card:hover{
+    background-color: #fa05b0;
+    color:white;
+    transform: scale(1.06);
+    transition: transform .4s;
+}

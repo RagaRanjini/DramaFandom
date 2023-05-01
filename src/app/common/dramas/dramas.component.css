@@ -1,0 +1,11 @@
+.scrollmenu{
+    overflow: auto;
+    white-space: nowrap;
+    background-color: #f7b7e4;
+}
+.heading{
+    background-color: #fa05b0;
+    padding: 15px;
+    color:white;
+}
+  

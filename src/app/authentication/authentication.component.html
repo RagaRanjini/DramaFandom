@@ -1,0 +1,52 @@
+<mat-toolbar>
+    <h1>Drama Fandom</h1>
+</mat-toolbar>
+<body>
+    <div class="column1">
+        <!-- toggle button -->
+    <mat-button-toggle-group name="page" aria-label="Font Style">
+        <mat-button-toggle value="signin" (click)="login()">Sign In</mat-button-toggle>
+        <mat-button-toggle value="signup" (click)="register()">Sign Up</mat-button-toggle>
+    </mat-button-toggle-group>
+    <!-- login form -->
+    <mat-card *ngIf="signin==true">
+        <mat-card-content>
+            <!-- template based approach -->
+            <div>
+                <input type="email" placeholder="Email ID" [(ngModel)]="email" >
+                <input type="text" placeholder="Password" [(ngModel)]="password" >
+                <div *ngIf="error.length>0">
+                    <p *ngFor="let x of error">{{x}}</p>
+                </div> 
+                <a href="#"><p>forgot password</p></a>
+                <br><br><br>
+                <button type="submit" (click)="existinguser()">Sign in</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <!-- signup form -->
+    <mat-card *ngIf="signup==true">
+        <mat-card-content>
+            <!-- model based approach -->
+            <form [formGroup]="signupform" (submit)="newuser()">
+                <input type="email" placeholder="Email ID" formControlName="email">
+                <div *ngIf='signupform.controls.email.hasError("required")'><p>Should be filled</p></div>
+                <div *ngIf='signupform.controls.email.hasError("pattern")'><p>Should be valid email</p></div>
+                <div *ngIf="existing==true"><p>Already existing user email</p></div>
+                <input type="text" placeholder="Username" formControlName="username">
+                <div *ngIf='signupform.controls.username.hasError("required")'><p>Should be filled</p></div>
+                <div *ngIf='signupform.controls.username.hasError("minlength")'><p>Atleast five Characters long</p></div>
+                <div *ngIf='signupform.controls.username.hasError("pattern")'><p>Use lowercase alphabets & numbers</p></div>
+                <input type="text" placeholder="Password" formControlName="password">
+                <div *ngIf='signupform.controls.password.hasError("required")'><p>Should be filled</p></div>
+                <div *ngIf='signupform.controls.password.hasError("minlength")'><p>Must be a 6 digit password</p></div>
+                <button type="submit">Sign up</button>
+            </form>
+        </mat-card-content>
+    </mat-card> 
+    </div>
+    <div class="column2">
+        <h1 class="text" [style.color]="'#eb2c63'">Unlock the world of drama</h1>
+        <p class="fade-in-text" [style.color]="'white'">Experience the magic of drama: From heart-wrenching romances to thrilling mysteries, our collection of dramas will take you on a journey you won't forget.</p>
+    </div> 
+</body>

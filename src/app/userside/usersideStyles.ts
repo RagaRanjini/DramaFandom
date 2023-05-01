@@ -1,0 +1,75 @@
+export const NavyBlueGradient={
+    mattoolbar:{
+        backgroundColor:"#613fe8"
+    },
+    homebox:{
+        marginLeft:"860px",
+        color:"white"
+    },
+    themebox:{
+        marginLeft:"20px",
+        color:"white"
+    },
+    dramabox:{
+        marginLeft:"20px",
+        color:"white",
+        textDecoration:"none"
+    },
+    h1:{
+        color:"white",
+        paddingTop:"10px"
+    },
+    background:{
+        backgroundColor:"#c6c9f7"
+    }
+}
+export const IPurpleYou={
+    mattoolbar:{
+        backgroundColor:"#c222f2"
+    },
+    homebox:{
+        marginLeft:"860px",
+        color:"white"
+    },
+    themebox:{
+        marginLeft:"20px",
+        color:"white"
+    },
+    dramabox:{
+        marginLeft:"20px",
+        color:"white",
+        textDecoration:"none"
+    },
+    h1:{
+        color:"white",
+        paddingTop:"10px"
+    },
+    background:{
+        backgroundColor:"#f4c0fa"
+    }
+}
+export const AccentShade={
+    mattoolbar:{
+        backgroundColor:"#eb2c63"
+    },
+    homebox:{
+        marginLeft:"860px",
+        color:"white"
+    },
+    themebox:{
+        marginLeft:"20px",
+        color:"white"
+    },
+    dramabox:{
+        marginLeft:"20px",
+        color:"white",
+        textDecoration:"none"
+    },
+    h1:{
+        color:"white",
+        paddingTop:"10px"
+    },
+    background:{
+        backgroundColor:"#f59ad4"
+    }
+}

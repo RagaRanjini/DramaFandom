@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col">
+    <mat-form-field appearance="fill">
+      <mat-label>Select Genre</mat-label>
+      <mat-select (selectionChange)="chosengenre = $event.value">
+        <mat-option *ngFor="let genre of genres" [value]="genre">
+          {{genre}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Search</mat-label>
+            <input type="text"
+                   aria-label="Title"
+                   matInput
+                   [formControl]="myControl"
+                   [matAutocomplete]="auto">
+            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="onOptionSelected($event)">
+              <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="col">
+        <mat-icon>search</mat-icon>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <mat-slider min="2005" max="2023" step="3">
+      <input [(value)]="value1" matSliderStartThumb>
+      <input [(value)]="value2" matSliderEndThumb>
+    </mat-slider>
+  </div>
+</div>
+  <br>
+<div  class="divclass" *ngFor="let drama of dramasList|searchbar:selectedOption|languagefilter:language|genrefilter:chosengenre|yearfilter:value1:value2">
+    <mat-card>
+        <mat-card-content>
+            <img src="http://localhost/DramaFandom/{{drama.Image}}" alt="">
+        </mat-card-content>
+        <mat-card-footer>
+            <h2>{{drama.Title}}</h2>
+            <div class="footer">
+                <p>{{drama.Released_Year}}</p>
+                <p class="seasons">Seasons:{{drama.Seasons}}</p>
+            </div>
+            <div class="footer">
+                <button routerLink="/Dramas/{{drama.id}}" class="view" mat-raised-button color="primary">View</button>
+                <button class="like" mat-raised-button color="accent">Like</button>
+            </div>
+        </mat-card-footer>
+    </mat-card>
+</div>

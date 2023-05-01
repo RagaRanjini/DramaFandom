@@ -1,0 +1,13 @@
+<img [src]="imageUrls[currentImageIndex]" [ngStyle]="styles.img">
+
+<div class="heading">
+    <h1>Latest Buzz</h1>
+</div>
+
+<!-- child component 'latest-buzz' uses @Input() and gets the data --> 
+<div class="scrollmenu">
+    <app-latest-buzz *ngFor="let latestbuzz of latestBuzzList" [latestBuzz]="latestbuzz"></app-latest-buzz>
+</div>
+<app-footer></app-footer>
+
+  
