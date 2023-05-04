@@ -1,0 +1,20 @@
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Title</th>
+            <th>Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let drama of topdramas">
+            <td>{{drama.Language}}</td>
+            <td>{{drama.Title}}</td>
+            <td>{{drama.Genre}}</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+  
+<!-- iterating thorugh topdramas array and displaying it -->

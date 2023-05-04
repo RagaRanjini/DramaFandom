@@ -17,13 +17,13 @@ export class DramasGetServicesService {
     getView(id:any):Observable<any>{
       return this.http.get("http://localhost:4500/Dramas/"+id)
     }
-    getKoreanTitles():Observable<any>{
-      return this.http.get("http://localhost:4500/KoreanTitles");
-    }
-    getChineseTitles():Observable<any>{
-      return this.http.get("http://localhost:4500/ChineseTitles");
-    }
-    getJapaneseTitles():Observable<any>{
-      return this.http.get("http://localhost:4500/JapaneseTitles");
-    }
+    // getKoreanTitles():Observable<any>{
+    //   return this.http.get("http://localhost:4500/KoreanTitles");
+    // }
+    // getChineseTitles():Observable<any>{
+    //   return this.http.get("http://localhost:4500/ChineseTitles");
+    // }
+    // getJapaneseTitles():Observable<any>{
+    //   return this.http.get("http://localhost:4500/JapaneseTitles");
+    // }
 }

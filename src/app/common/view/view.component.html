@@ -1,16 +1,20 @@
 <div class="row">
     <div class="col">
+        <!-- image of that id drama -->
         <img src="http://localhost/DramaFandom/{{details.Image}}" alt="image">
         <hr>
+        <!-- that drama -- featuring and plot details -->
         <p><b>Featuring: {{details.Featuring}}</b></p>
         <hr>
         <p>{{details.Plot}}</p>
     </div>
     <div class="col">
+        <!-- reviews heading -->
         <h1>Reviews</h1>
         <hr>
         <mat-card>
             <mat-card-content>
+                <!-- review posting form -->
                 <form  [formGroup]="Form"  (submit)="postReview()">
                     <div class="row">
                         <div class="col-6">
@@ -25,10 +29,12 @@
                 </form>
             </mat-card-content>
         </mat-card>
+        <!-- calling content component, also iterating through each reviews of that drama -->
         <div class="row" id="reviewbox">
             <div class="container">
                 <div class="content">
                     <app-reviews #myComponent *ngFor="let x of reviews|review: currentid" [review]="x"></app-reviews>
+                    <!-- used filter called review to take reviews of this drama whose id is stored in a variable called currentid -->
                 </div>
               </div>
         </div>

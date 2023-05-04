@@ -1,3 +1,20 @@
+<!-- Menubar of UserSide -->
 <mat-toolbar>
-    <h1>Admin Home Menubar</h1>
-</mat-toolbar>
+    <!-- heading -->
+      <h1>Drama Fandom</h1>
+      <!-- home -->
+      <button class="homebutton" (click)="home()" mat-button style="color: white">Home</button>
+      <!-- Existing dramas -->
+      <button mat-button class="dramasbutton" (click)="existingdramas()"  style="color: white">Dramas</button>
+      <!-- topchart button -->
+      <button class="topchart" mat-button (click)="changeTopchart()"  style="color: white">Top Chart</button>
+      <!-- post new -->
+      <button class="postbutton" mat-button [matMenuTriggerFor]="dramas"><i class="material-icons" style="color: white">add</i></button>
+      <mat-menu #dramas="matMenu">
+          <button (click)="postNewDrama()" mat-menu-item>Dramas</button>
+          <button (click)="postNewBuzz()" mat-menu-item>LatestBuzz</button>
+        </mat-menu>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  
+  

@@ -14,6 +14,12 @@ import { ViewComponent } from './common/view/view.component';
 import { ReviewsComponent } from './common/reviews/reviews.component';
 import { ReviewPipe } from './pipes/review.pipe';
 import { FooterComponent } from './common/footer/footer.component';
+import { TopchartComponent } from './common/topchart/topchart.component';
+import { ScrollDirective } from './common/directives/scroll.directive';
+import { ScrollbackDirective } from './common/directives/scrollback.directive';
+
+
+
 
 
 
@@ -29,7 +35,10 @@ import { FooterComponent } from './common/footer/footer.component';
     ViewComponent,
     ReviewsComponent,
     ReviewPipe,
-    FooterComponent
+    FooterComponent,
+    TopchartComponent,
+    ScrollDirective,
+    ScrollbackDirective
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@ export const NavyBlueGradient={
         backgroundColor:"#613fe8"
     },
     homebox:{
-        marginLeft:"860px",
+        marginLeft:"760px",
         color:"white"
     },
     themebox:{
@@ -11,6 +11,11 @@ export const NavyBlueGradient={
         color:"white"
     },
     dramabox:{
+        marginLeft:"20px",
+        color:"white",
+        textDecoration:"none"
+    },
+    topchartbox:{
         marginLeft:"20px",
         color:"white",
         textDecoration:"none"
@@ -28,7 +33,7 @@ export const IPurpleYou={
         backgroundColor:"#c222f2"
     },
     homebox:{
-        marginLeft:"860px",
+        marginLeft:"760px",
         color:"white"
     },
     themebox:{
@@ -36,6 +41,11 @@ export const IPurpleYou={
         color:"white"
     },
     dramabox:{
+        marginLeft:"20px",
+        color:"white",
+        textDecoration:"none"
+    },
+    topchartbox:{
         marginLeft:"20px",
         color:"white",
         textDecoration:"none"
@@ -53,7 +63,7 @@ export const AccentShade={
         backgroundColor:"#eb2c63"
     },
     homebox:{
-        marginLeft:"860px",
+        marginLeft:"760px",
         color:"white"
     },
     themebox:{
@@ -65,11 +75,16 @@ export const AccentShade={
         color:"white",
         textDecoration:"none"
     },
+    topchartbox:{
+        marginLeft:"20px",
+        color:"white",
+        textDecoration:"none"
+    },
     h1:{
         color:"white",
         paddingTop:"10px"
     },
     background:{
-        backgroundColor:"#f59ad4"
+        backgroundColor:"#f7b5e7"
     }
 }

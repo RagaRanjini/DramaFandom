@@ -7,4 +7,5 @@ import { Component,Input } from '@angular/core';
 })
 export class ReviewsComponent {
 @Input() review:any;
+//getting review of that id(drama) from another component --view
 }

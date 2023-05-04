@@ -1,0 +1,22 @@
+th{
+    text-align: center;
+    background-color: #077af5;
+    padding: 20px;
+    color:white
+}
+tr{
+    text-align: center;
+    border: solid white;
+    background-color: #90c1f5;
+}
+td{
+    text-align: center;
+    border: solid white;
+}
+table{
+    width: 800px;
+    height: 400px;
+    margin-top:4%;
+    margin-left: 16%;
+    border:solid white;
+}

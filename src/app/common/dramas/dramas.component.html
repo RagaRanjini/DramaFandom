@@ -1,12 +1,23 @@
+<!-- slideshow of all iconic dramas -->
 <img [src]="imageUrls[currentImageIndex]" [ngStyle]="styles.img">
-
+<!-- latest buzz header -->
 <div class="heading">
     <h1>Latest Buzz</h1>
 </div>
-
 <!-- child component 'latest-buzz' uses @Input() and gets the data --> 
-<div class="scrollmenu">
+<!-- <div class="scrollmenu">
     <app-latest-buzz *ngFor="let latestbuzz of latestBuzzList" [latestBuzz]="latestbuzz"></app-latest-buzz>
+</div> -->
+<div class="product-container">
+    <div id="corner-arrow-left"  [scrollback]="100" >
+        <img src="http://localhost/DramaFandom/left.webp" />
+   </div>
+   <div id="corner-arrow-right" [scroll]="100"  >
+        <img src="http://localhost/DramaFandom/right.webp" />
+   </div>
+   <div class="product-scroll">
+    <app-latest-buzz *ngFor="let latestbuzz of latestBuzzList" [latestBuzz]="latestbuzz"></app-latest-buzz>
+   </div>
 </div>
 <app-footer></app-footer>
 

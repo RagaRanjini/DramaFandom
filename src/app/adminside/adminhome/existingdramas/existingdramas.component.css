@@ -1,0 +1,64 @@
+mat-card{
+    width: 250px;
+    height: 300px;
+    margin-top: 30px;
+    box-shadow: 2px 3px #d4d6d5;
+    border: solid  #d4d6d5;
+}
+mat-card-content{
+    margin-top: 10px;
+}
+#block{
+    background-color: #b5cef7;
+}
+.divclass{
+    float:left;
+    margin-left: 50px;
+}
+.footer{
+    display:flex;
+    flex-direction: row;
+}
+.seasons{
+    margin-left: 120px;
+}
+/* .view{
+    margin-left: 15px;
+}
+.edit{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+.delete{
+    margin-left: 20px;
+    margin-top: 5px;
+} */
+.menu{
+    color:#434445;
+    margin-left: 200px;
+    cursor: pointer;
+}
+img{
+    width: 98%;
+    height: 120px;
+}
+h2{
+    margin-left: 15px;
+}
+p{
+    color:grey;
+    margin-left: 15px;
+}
+.languagedropdown{
+    margin-left: 130px;
+    margin-top: 20px;
+}
+.searchbox{
+    margin-top: 20px;
+    width: 500px;
+    margin-left: 50px;
+}
+.search{
+    margin-top: 30px;
+    margin-left: -10px;
+}

@@ -9,6 +9,7 @@ import { DramasGetServicesService } from 'src/app/services/dramas-get-services.s
 })
 export class HomeComponent {
   constructor(private router:Router, private ar:ActivatedRoute,private gs:DramasGetServicesService){}
+  // theme operations
   theme:any=NavyBlueGradient;
   themes:any=["NavyBlueGradient","IPurpleYou","AccentShade"]
 themesMap: any = {
@@ -19,16 +20,24 @@ themesMap: any = {
 onChangeTheme(theme: any) {
   this.theme = this.themesMap[theme];
 }
+//home page - dramas component - common
 home(){
   this.router.navigate(['dramas'],{relativeTo:this.ar})
 }
+//kdramas component
 changeKdramas(){
   this.router.navigate(['kdramas'],{relativeTo:this.ar})
 }
+//cdramas component
 changeCdramas(){
   this.router.navigate(['cdramas'],{relativeTo:this.ar})
 }
+//jdramas component
 changeJdramas(){
   this.router.navigate(['jdramas'],{relativeTo:this.ar})
+}
+//topchart component - common
+changeTopchart(){
+  this.router.navigate(['topchart'],{relativeTo:this.ar})
 }
 }

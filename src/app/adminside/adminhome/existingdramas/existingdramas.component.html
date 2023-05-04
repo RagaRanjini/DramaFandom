@@ -1,0 +1,67 @@
+<div class="row" id="block">
+    <div class="col-8">
+        <div class="row">
+            <div class="col">
+                <form class="example-form">
+                    <mat-form-field class="example-full-width" appearance="fill" class="searchbox">
+                      <mat-label>Search</mat-label>
+                      <input type="text"
+                             aria-label="Title"
+                             matInput
+                             [formControl]="myControl"
+                             [matAutocomplete]="auto">
+                      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="onOptionSelected($event)">
+                        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                          {{option}}
+                        </mat-option>
+                      </mat-autocomplete>
+                    </mat-form-field>
+                  </form>
+            </div>
+              <div class="col">
+                <mat-icon class="search">search</mat-icon>
+              </div>
+        </div>
+    </div>
+    <div class="col">
+        <mat-form-field appearance="fill" class="languagedropdown">
+            <mat-label>Language</mat-label>
+            <mat-select [(ngModel)]="language">
+                <mat-option value="View all">View all</mat-option>
+              <mat-option value="Korean">Korean</mat-option>
+              <mat-option value="Chinese">Chinese</mat-option>
+              <mat-option value="Japanese">Japanese</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+</div>
+<div class= "divclass" *ngFor="let drama of dramas|searchbarforadmin:selectedOption|languagefilterforadmin: language">
+    <mat-card>
+      <mat-card-header>
+        <!-- <button mat-icon-button [matMenuTriggerFor]="menu"> -->
+          <mat-icon class="menu" [matMenuTriggerFor]="menu">more_vert</mat-icon>
+        <!-- </button>  -->
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item  routerLink="/Dramas/{{drama.id}}">View</button>
+          <button mat-menu-item  (click)="editform(drama.id)">Edit</button>
+          <button mat-menu-item (click)="delete(drama.id,drama.Title)">Delete</button>
+        </mat-menu>
+      </mat-card-header>
+        <mat-card-content>
+            <img src="http://localhost/DramaFandom/{{drama.Image}}" alt="">
+        </mat-card-content>
+        <mat-card-footer>
+            <h2>{{drama.Title}}</h2>
+            <div class="footer">
+                <p>{{drama.Released_Year}}</p>
+                <p class="seasons">Seasons:{{drama.Seasons}}</p>
+            </div>
+            <!-- <div class="footer">
+                <button class="view" routerLink="/Dramas/{{drama.id}}" mat-raised-button color="primary">View</button>
+                <mat-icon class="edit" color="accent" (click)="editform(drama.id)">edit</mat-icon>
+                <mat-icon class="delete" color="warn" (click)="delete(drama.id)">delete</mat-icon>
+            </div> -->
+        </mat-card-footer>
+    </mat-card>
+</div>
+

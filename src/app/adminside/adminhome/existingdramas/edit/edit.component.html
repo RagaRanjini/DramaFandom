@@ -1,0 +1,84 @@
+<div #form class="form">
+    <!-- Title and language -->
+    <div class="row">
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Title</mat-label>
+                <input matInput [(ngModel)]="Title">
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Language</mat-label>
+                <mat-select [(ngModel)]="Language">
+                  <mat-option value="Korean">Korean</mat-option>
+                  <mat-option value="Chinese">Chinese</mat-option>
+                  <mat-option value="Japanese">Japanese</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <!-- Genre and Image -->
+    <div class="row">
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Genre</mat-label>
+                <mat-select [(ngModel)]="Genre">
+                  <mat-option value="Teen Drama">Teen Drama</mat-option>
+                  <mat-option value="Romance">Romance</mat-option>
+                  <mat-option value="Thriller">Thriller</mat-option>
+                  <mat-option value="Fantasy">Fantasy</mat-option>
+                  <mat-option value="Comedy">Comedy</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Image</mat-label>
+                <input matInput [(ngModel)]="Image">
+            </mat-form-field>
+        </div>
+    </div>
+    <!-- Featuring and Released_Year -->
+    <div class="row">
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Featuring</mat-label>
+                <input matInput [(ngModel)]="Featuring">
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Released_Year</mat-label>
+                <input matInput type="number" [(ngModel)]="Released_Year">
+            </mat-form-field>
+        </div>
+    </div>
+    <!-- Type and Seasons -->
+    <div class="row">
+        <div class="col">
+            <mat-radio-group [(ngModel)]="Type">
+                <mat-radio-button value="old">Old</mat-radio-button>
+                <mat-radio-button value="new">New</mat-radio-button>
+            </mat-radio-group>             
+        </div>
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Seasons</mat-label>
+                <input matInput [(ngModel)]="Seasons">
+            </mat-form-field>
+        </div>
+    </div>
+    <!-- Plot and submit button -->
+    <div class="row">
+        <div class="col">
+            <mat-form-field appearance="fill">
+                <mat-label>Plot</mat-label>
+                <input matInput [(ngModel)]="Plot">
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <button mat-raised-button color="primary" (click)="editDrama()">Edit Drama</button>
+        </div>
+    </div>
+</div>

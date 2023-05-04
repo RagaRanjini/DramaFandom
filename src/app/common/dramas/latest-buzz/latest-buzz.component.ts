@@ -7,5 +7,5 @@ import { Component,Input } from '@angular/core';
 })
 export class LatestBuzzComponent {
   @Input() latestBuzz:any;
-
+//getting latestBuzz data from parent component
 }

@@ -3,6 +3,7 @@ mat-card{
     margin: 25px;
     width: 250px;
     height:300px;
+    border: solid #dedfe0;
 }
 img{
     width: 98%;
@@ -14,8 +15,6 @@ p{
     margin-left: 10%;
 }
 mat-card:hover{
-    background-color: #fa05b0;
-    color:white;
     transform: scale(1.06);
     transition: transform .4s;
 }

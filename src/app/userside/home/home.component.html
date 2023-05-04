@@ -1,12 +1,19 @@
+<!-- Menubar of UserSide -->
 <mat-toolbar [ngStyle]="theme.mattoolbar">
+  <!-- heading -->
     <h1 [ngStyle]="theme.h1">Drama Fandom</h1>
+    <!-- home -->
     <button mat-button (click)="home()" [ngStyle]="theme.homebox">Home</button>
+    <!-- dramas -->
     <button mat-button [matMenuTriggerFor]="dramas" [ngStyle]="theme.dramabox" >Dramas</button>
     <mat-menu #dramas="matMenu">
         <button mat-menu-item (click)="changeKdramas()">K-Dramas</button>
         <button mat-menu-item (click)="changeCdramas()">C-Dramas</button>
         <button mat-menu-item (click)="changeJdramas()">J-Dramas</button>
       </mat-menu>
+      <!-- top chart -->
+    <button mat-button (click)="changeTopchart()" [ngStyle]="theme.topchartbox">Top Chart</button>
+    <!-- themes -->
     <button mat-icon-button [matMenuTriggerFor]="menu" [ngStyle]="theme.themebox">
         <mat-icon>palette</mat-icon>
     </button>
@@ -18,5 +25,6 @@
 </mat-toolbar>
 <body [ngStyle]="theme.background">
   <router-outlet></router-outlet>
+  <!-- calls respective component -->
 </body>
 

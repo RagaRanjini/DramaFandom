@@ -1,0 +1,19 @@
+h1{
+    color:white;
+}
+.homebutton{
+    margin-left: 750px;
+}
+.dramasbutton{
+    margin-left: 20px;
+}
+.topchart{
+    margin-left: 20px
+}
+.postbutton{
+    margin-left: 20px;
+    border-radius: 50%;
+}
+mat-toolbar{
+    background-color: #613fe8;
+}
