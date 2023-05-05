@@ -11,4 +11,7 @@ export class DeleteService {
   deleteDrama(id:number):Observable<any>{
     return this.http.delete("http://localhost:4500/Dramas/"+id)
   }
+  deleteBuzz(id:number):Observable<any>{
+    return this.http.delete("http://localhost:4500/latestBuzz/"+id)
+  }
 }

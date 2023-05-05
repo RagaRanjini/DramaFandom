@@ -24,28 +24,6 @@ export class PostServicesService {
     })
     return this.hp.post("http://localhost:4500/Dramas",data,this.httpOptions);
   }
-  postingKDrama(data:any):Observable<any>{
-    this.httpOptions =  new HttpHeaders({
-      'Content-Type':  'application/json',
-    })
-    return this.hp.post("http://localhost:4500/KoreanTitles",data,this.httpOptions).pipe(
-      catchError(error => {
-        console.log("Error occurred while posting Korean drama title:", error);
-        return throwError(error);
-      }));
-  }
-  postingCDrama(data:any):Observable<any>{
-    this.httpOptions =  new HttpHeaders({
-      'Content-Type':  'application/json',
-    })
-    return this.hp.post("http://localhost:4500/ChineseTitles",data,this.httpOptions);
-  }
-  postingJDrama(data:any):Observable<any>{
-    this.httpOptions =  new HttpHeaders({
-      'Content-Type':  'application/json',
-    })
-    return this.hp.post("http://localhost:4500/JapaneseTitles",data,this.httpOptions);
-  }
   postingBuzz(data:any):Observable<any>{
     this.httpOptions =  new HttpHeaders({
       'Content-Type':  'application/json',

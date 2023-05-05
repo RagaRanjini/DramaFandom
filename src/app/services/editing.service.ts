@@ -11,4 +11,7 @@ export class EditingService {
   editingDrama(id:number,data:any):Observable<any>{
     return this.http.put("http://localhost:4500/Dramas/"+id,data);
   }
+  editingBuzz(id:number,data:any):Observable<any>{
+    return this.http.put("http://localhost:4500/latestBuzz/"+id,data)
+  }
 }

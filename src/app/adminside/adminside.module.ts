@@ -11,6 +11,9 @@ import { SearchbarforadminPipe } from '../pipes/searchbarforadmin.pipe';
 import { LanguagefilterforadminPipe } from '../pipes/languagefilterforadmin.pipe';
 import { EditComponent } from './adminhome/existingdramas/edit/edit.component';
 import { DeleteComponent } from './adminhome/existingdramas/delete/delete.component';
+import { AdminlatestbuzzComponent } from './adminhome/adminlatestbuzz/adminlatestbuzz.component';
+import { EditbuzzComponent } from './adminhome/adminlatestbuzz/editbuzz/editbuzz.component';
+import { DeletebuzzComponent } from './adminhome/adminlatestbuzz/deletebuzz/deletebuzz.component';
 
 
 
@@ -23,7 +26,10 @@ import { DeleteComponent } from './adminhome/existingdramas/delete/delete.compon
     SearchbarforadminPipe,
     LanguagefilterforadminPipe,
     EditComponent,
-    DeleteComponent
+    DeleteComponent,
+    AdminlatestbuzzComponent,
+    EditbuzzComponent,
+    DeletebuzzComponent
   ],
   imports: [
     CommonModule,

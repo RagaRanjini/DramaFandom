@@ -17,6 +17,9 @@ export class DramasGetServicesService {
     getView(id:any):Observable<any>{
       return this.http.get("http://localhost:4500/Dramas/"+id)
     }
+    getLatestBuzzbyId(id:number):Observable<any>{
+      return this.http.get("http://localhost:4500/latestBuzz/"+id)
+    }
     // getKoreanTitles():Observable<any>{
     //   return this.http.get("http://localhost:4500/KoreanTitles");
     // }

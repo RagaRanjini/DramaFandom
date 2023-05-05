@@ -2,9 +2,12 @@ h1{
     color:white;
 }
 .homebutton{
-    margin-left: 750px;
+    margin-left: 630px;
 }
 .dramasbutton{
+    margin-left: 20px;
+}
+.buzzbutton{
     margin-left: 20px;
 }
 .topchart{

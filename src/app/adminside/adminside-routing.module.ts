@@ -6,6 +6,8 @@ import { DramasComponent } from '../common/dramas/dramas.component';
 import { TopchartComponent } from '../common/topchart/topchart.component';
 import { ExistingdramasComponent } from './adminhome/existingdramas/existingdramas.component';
 import { EditComponent } from './adminhome/existingdramas/edit/edit.component';
+import { AdminlatestbuzzComponent } from './adminhome/adminlatestbuzz/adminlatestbuzz.component';
+
 
 const routes: Routes = [
   {
@@ -26,6 +28,10 @@ const routes: Routes = [
     {
       path: "existingDramas",
       component: ExistingdramasComponent
+    },
+    {
+      path: "latestbuzz",
+      component: AdminlatestbuzzComponent
     }
   ]
   }

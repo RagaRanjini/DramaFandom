@@ -1,0 +1,17 @@
+<!-- <p>editbuzz works!</p>
+<p>{{data.thisid}}</p>
+<p>{{currentBuzz.news}}</p> -->
+<div class="form">
+    <mat-form-field appearance="fill">
+        <mat-label>News</mat-label>
+        <input matInput [(ngModel)]="news">
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Image</mat-label>
+        <input matInput [(ngModel)]="image">
+      </mat-form-field>
+      <br>
+    <button mat-raised-button color="primary" (click)="editBuzz()">Edit Buzz</button>
+    <br>
+</div>

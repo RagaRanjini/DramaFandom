@@ -3,9 +3,7 @@
         <img src="http://localhost/DramaFandom/{{latestBuzz.image}}" alt="image">
     </mat-card-content>
     <mat-card-footer>
-        <div *ngFor="let x of latestBuzz.news">
-            <p>{{x}}</p>
-        </div>
+        <p>{{latestBuzz.news}}</p>
     </mat-card-footer>
 </mat-card>
 <!-- latest buzz cards - iteration happens from parent component itself -->

@@ -19,7 +19,9 @@ export class DeleteComponent {
   deleteDrama(id:number){
     this.ds.deleteDrama(id).subscribe(
       {
-        next:(data:any)=>alert("Drama is deleted successfully !"),
+        next:(data:any)=>{
+          alert("Drama is deleted successfully !");
+        },
         error:()=>alert("Deletion failed !")
       }
     )

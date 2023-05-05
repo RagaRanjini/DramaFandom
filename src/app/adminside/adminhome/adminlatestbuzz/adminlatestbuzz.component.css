@@ -1,0 +1,25 @@
+mat-card{
+    margin-left: 35px;
+    margin-top: 15px;
+    float:left;
+    /* margin: 25px; */
+    width: 270px;
+    height:320px;
+    border: solid #dedfe0;
+}
+img{
+    width: 98%;
+    height: 200px;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+p{
+    font-size: small;
+    margin-left: 10%;
+    padding-top: 10px
+}
+.menu{
+    color:#434445;
+    margin-left: 220px;
+    cursor: pointer;
+}

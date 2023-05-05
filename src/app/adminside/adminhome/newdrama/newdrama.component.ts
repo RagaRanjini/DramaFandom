@@ -19,39 +19,7 @@ Seasons:string="";
 Likes:number=0;
 Plot:string="";
 constructor(private pd:PostServicesService){}
-ktitles(){
-  let data={Title: this.Title}
-  this.pd.postingKDrama(data).subscribe(
-    {
-      next:(data:any)=>{
-        console.log(data)
-      },
-      error:()=>{}
-    }
-  )
-}
-ctitles(){
-  let data={Title: this.Title}
-  this.pd.postingCDrama(data).subscribe(
-    {
-      next:(data:any)=>{
-        console.log(data)
-      },
-      error:()=>{}
-    }
-  )
-}
-jtitles(){
-  let data={Title: this.Title}
-  this.pd.postingJDrama(data).subscribe(
-    {
-      next:(data:any)=>{
-        console.log(data)
-      },
-      error:()=>{}
-    }
-  )
-}
+
 postDrama(){
   // console.log(this.Title);
   // console.log(this.Language);
@@ -74,15 +42,6 @@ postDrama(){
       {
         next:(data:any)=>{
           alert("Drama has been posted successfully !");
-          if(this.Language=="Korean"){
-            this.ktitles()
-          }
-          if(this.Language=="Chinese"){
-            this.ctitles()
-          }
-          if(this.Language=="Japanese"){
-            this.jtitles()
-          }
           this.Title="";
           this.Language="",
           this.Genre="",

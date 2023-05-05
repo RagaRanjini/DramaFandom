@@ -4,6 +4,7 @@ mat-card{
     width: 250px;
     height:300px;
     border: solid #dedfe0;
+    overflow: hidden;
 }
 img{
     width: 98%;
@@ -13,6 +14,8 @@ img{
 p{
     font-size: small;
     margin-left: 10%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 mat-card:hover{
     transform: scale(1.06);

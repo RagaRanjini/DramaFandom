@@ -14,6 +14,9 @@ constructor(private router:Router,private ar:ActivatedRoute,public dialog: MatDi
 home(){
   this.router.navigate(['dramas'],{relativeTo:this.ar})
 }
+latestBuzz(){
+  this.router.navigate(['latestbuzz'],{relativeTo:this.ar})
+}
 existingdramas(){
   this.router.navigate(['existingDramas'],{relativeTo:this.ar})
 }
