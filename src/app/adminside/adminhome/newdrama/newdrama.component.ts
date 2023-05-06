@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 import { PostServicesService } from 'src/app/services/post-services.service';
 
 @Component({
@@ -18,7 +19,7 @@ Type:string="";
 Seasons:string="";
 Likes:number=0;
 Plot:string="";
-constructor(private pd:PostServicesService){}
+constructor(private pd:PostServicesService,public dialogref: MatDialogRef<NewdramaComponent>){}
 
 postDrama(){
   // console.log(this.Title);
@@ -48,8 +49,9 @@ postDrama(){
           this.Image="",
           this.Featuring="",
           this.Plot="",
-          this.Released_Year=0;
-          this.Seasons=""
+          this.Released_Year=0,
+          this.Seasons="",
+          this.dialogref.close()
         },
         error:()=>alert("Some error in posting new drama")
       }

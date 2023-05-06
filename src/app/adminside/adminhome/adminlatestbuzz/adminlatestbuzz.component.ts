@@ -18,11 +18,32 @@ export class AdminlatestbuzzComponent {
   })
  }
  editform(id:any){
-  this.dialog.open(EditbuzzComponent,{data:{thisid:id}})
+  const editform=this.dialog.open(EditbuzzComponent,{data:{thisid:id}})
   // console.log(id)
+  editform.afterClosed().subscribe(buzzdata=>{
+    if(buzzdata){
+      this.buzz=this.buzz.map((data:any)=>{
+        if(data.id==id){
+          return buzzdata;
+        }
+        return data;
+      })
+    }
+  })
 }
 delete(id:any){
-  this.dialog.open(DeletebuzzComponent,{data:{thisid:id}})
+  const deletedialog=this.dialog.open(DeletebuzzComponent,{data:{thisid:id}});
+  deletedialog.afterClosed().subscribe(
+    {
+      next:()=>{
+        this.gs.getLatestBuzz().subscribe({
+          next:(data:any)=>this.buzz=data,
+          error:()=>this.buzz=[]
+        })
+      },
+      error:()=>alert("Error occured !")
+    }
+  )
 }
 
 }

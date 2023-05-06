@@ -15,7 +15,10 @@ cancelFunction(){
 deleteBuzz(id:number){
   this.ds.deleteBuzz(id).subscribe(
     {
-      next:(data:any)=>alert("Buzz is deleted successfully !"),
+      next:(data:any)=>{
+        alert("Buzz is deleted successfully !");
+        this.dialogRef.close();
+      },
       error:()=>alert("Deletion failed !")
     }
   )

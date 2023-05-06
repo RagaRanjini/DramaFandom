@@ -1,6 +1,6 @@
 export const NavyBlueGradient={
     mattoolbar:{
-        backgroundColor:"#613fe8"
+        backgroundColor:"#3f51b5"
     },
     homebox:{
         marginLeft:"760px",

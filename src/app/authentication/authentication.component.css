@@ -1,16 +1,16 @@
 body{
-    background-color: black;
     display: flex;
     flex-direction: row;
 }
 .column1{
-    flex: 50%;
+    flex: 40%;
 }
 .column2{
-    flex: 50%;
+    flex: 60%;
+    background-color: #c4e7f2;
+    padding-left: 20px;
 }
 mat-toolbar{
-    background-color: #eb2c63;
     color: white;
 }
 h1{
@@ -22,12 +22,12 @@ mat-button-toggle-group{
     border:none;
 }
 .mat-button-toggle{
-    background-color: #2a2b38;
-    color:white;
+    background-color:#ebedeb;
+    color:black;
 }
 .mat-button-toggle-checked{
-    background-color: #eb2c63;
-    color: black;
+    background-color: #3f51b5;
+    color: white;
 }
 mat-card{
     width: 300px;
@@ -36,7 +36,7 @@ mat-card{
     text-align:center;
     margin-left:70px;
     margin-top: 10px;
-    background-color: #2a2b38;
+    /* background-color: #f0f2f0; */
     box-shadow: 3px 7px 10px #666466;
 }
 input{
@@ -46,11 +46,11 @@ input{
 }
 input:focus{
     outline-style: none;
-    border:solid #c406a8
+    border:solid #3f51b5
 }
-button{
+.button{
     margin-top: 15px;
-    background-color:#eb2c63 ;
+    /* background-color:#3f51b5 ; */
     border: none;
     width: 50%;
     height: 40px;
@@ -59,7 +59,7 @@ button{
 a p{
     margin-top: 10px;
     float:left;
-    color:#eb2c63;
+    color:#3f51b5;
 }
 .text{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -68,7 +68,7 @@ a p{
     padding: 20px;
 }
 .fade-in-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Brush Script';
     animation: fadeIn 8s;
     font-size: xx-large;
     margin-top: 20px;
@@ -77,8 +77,13 @@ a p{
   
   @keyframes fadeIn {
     0% { opacity: 0; color:#666466}
-    100% { opacity: 1; color:white}
+    100% { opacity: 1; color:black}
   }
   p{
-    color:white;
+    color:black;
   }
+.menu{
+    margin-left: 80%;
+    width: 100px;
+    height: 30px;
+}

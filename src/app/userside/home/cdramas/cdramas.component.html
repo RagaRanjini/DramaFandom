@@ -51,21 +51,42 @@
   <br>
   <!-- card execution -->
 <div  class="divclass" *ngFor="let drama of dramasList|searchbar:selectedOption:isSearchBarEmpty|languagefilter:language|genrefilter:chosengenre|yearfilter:value1:value2">
+  <div *ngIf="drama.Type=='old'">
     <mat-card>
-        <mat-card-content>
-            <img src="http://localhost/DramaFandom/{{drama.Image}}" alt="">
-        </mat-card-content>
-        <mat-card-footer>
-            <h2>{{drama.Title}}</h2>
-            <div class="footer">
-                <p>{{drama.Released_Year}}</p>
-                <p class="seasons">Seasons:{{drama.Seasons}}</p>
-            </div>
-            <div class="footer">
-                <button routerLink="/Dramas/{{drama.id}}" class="view" mat-raised-button color="primary">View</button>
-                <button class="like" mat-raised-button color="accent" (click)="updateLikes(drama.id,drama.Likes)">Like</button>
-                    <p class="likes">{{drama.Likes}}</p>
-            </div>
-        </mat-card-footer>
-    </mat-card>
+      <mat-card-content>
+          <img src="http://localhost/DramaFandom/{{drama.Image}}" alt="">
+      </mat-card-content>
+      <mat-card-footer>
+          <h2>{{drama.Title}}</h2>
+          <div class="footer">
+              <p>{{drama.Released_Year}}</p>
+              <p class="seasons">Seasons:{{drama.Seasons}}</p>
+          </div>
+          <div class="footer">
+              <button routerLink="/Dramas/{{drama.id}}" class="view" mat-raised-button color="primary">View</button>
+              <button class="like" mat-raised-button color="accent" (click)="updateLikes(drama.id,drama.Likes)">Like</button>
+              <p class="likes">{{drama.Likes}}</p>
+          </div>
+      </mat-card-footer>
+  </mat-card>
+  </div>
+  <div *ngIf="drama.Type=='new'" matBadge="N" matBadgeColor="warn"matBadgeSize="large">
+    <mat-card>
+      <mat-card-content>
+          <img src="http://localhost/DramaFandom/{{drama.Image}}" alt="">
+      </mat-card-content>
+      <mat-card-footer>
+          <h2>{{drama.Title}}</h2>
+          <div class="footer">
+              <p>{{drama.Released_Year}}</p>
+              <p class="seasons">Seasons:{{drama.Seasons}}</p>
+          </div>
+          <div class="footer">
+              <button routerLink="/Dramas/{{drama.id}}" class="view" mat-raised-button color="primary">View</button>
+              <button class="like" mat-raised-button color="accent" (click)="updateLikes(drama.id,drama.Likes)">Like</button>
+              <p class="likes">{{drama.Likes}}</p>
+          </div>
+      </mat-card-footer>
+  </mat-card>
+  </div>
 </div>

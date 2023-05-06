@@ -1,12 +1,15 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
     <h1>Drama Fandom</h1>
+    <select [(ngModel)]="currentlang" (change)="changelang()" class="menu">
+        <option *ngFor="let x of languages" value="{{x.value}}">{{x.name}}</option>
+    </select>
 </mat-toolbar>
 <body>
     <div class="column1">
         <!-- toggle button -->
     <mat-button-toggle-group name="page" aria-label="Font Style">
-        <mat-button-toggle value="signin" (click)="login()">Sign In</mat-button-toggle>
-        <mat-button-toggle value="signup" (click)="register()">Sign Up</mat-button-toggle>
+        <mat-button-toggle value="signin" (click)="login()">{{"AuthenticationPage.signin"|translate}}</mat-button-toggle>
+        <mat-button-toggle value="signup" (click)="register()">{{"AuthenticationPage.signup"|translate}}</mat-button-toggle>
     </mat-button-toggle-group>
     <!-- login form -->
     <mat-card *ngIf="signin==true">
@@ -20,7 +23,7 @@
                 </div> 
                 <a href="#"><p>forgot password</p></a>
                 <br><br><br>
-                <button type="submit" (click)="existinguser()">Sign in</button>
+                <button mat-raised-button color="primary" class="button" type="submit" (click)="existinguser()">{{"AuthenticationPage.signin"|translate}}</button>
             </div>
         </mat-card-content>
     </mat-card>
@@ -40,13 +43,13 @@
                 <input type="text" placeholder="Password" formControlName="password">
                 <div *ngIf='signupform.controls.password.hasError("required")'><p>Should be filled</p></div>
                 <div *ngIf='signupform.controls.password.hasError("minlength")'><p>Must be a 6 digit password</p></div>
-                <button type="submit">Sign up</button>
+                <button mat-raised-button color="primary" class="button"type="submit">{{"AuthenticationPage.signup"|translate}}</button>
             </form>
         </mat-card-content>
     </mat-card> 
     </div>
     <div class="column2">
-        <h1 class="text" [style.color]="'#eb2c63'">Unlock the world of drama</h1>
-        <p class="fade-in-text" [style.color]="'white'">Experience the magic of drama: From heart-wrenching romances to thrilling mysteries, our collection of dramas will take you on a journey you won't forget.</p>
+        <h1 class="text" [style.color]="'#3f51b5'">{{"AuthenticationPage.pink"|translate}}</h1>
+        <p class="fade-in-text" [style.color]="'black'">{{"AuthenticationPage.white"|translate}}</p>
     </div> 
 </body>

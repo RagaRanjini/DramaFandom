@@ -21,6 +21,7 @@ export class DeleteComponent {
       {
         next:(data:any)=>{
           alert("Drama is deleted successfully !");
+          this.dialogRef.close();
         },
         error:()=>alert("Deletion failed !")
       }

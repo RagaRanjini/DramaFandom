@@ -1,5 +1,5 @@
 import { Component,Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DramasGetServicesService } from 'src/app/services/dramas-get-services.service';
 import { EditingService } from 'src/app/services/editing.service';
@@ -22,7 +22,7 @@ Seasons:string="";
 Likes:number=0;
 Plot:string="";
   
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any,private gs:DramasGetServicesService,private es:EditingService,private router:Router,private ar:ActivatedRoute) {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any,private gs:DramasGetServicesService,private es:EditingService,private router:Router,private ar:ActivatedRoute, public dialogref: MatDialogRef<EditComponent>) {
     this.gs.getView(data.thisid).subscribe(
       {
         next:(drama:any)=>{
@@ -42,7 +42,9 @@ Plot:string="";
       }
     )
   }
+
   id:number=this.data.thisid
+
   editDrama(){
     if(this.Title==""||this.Language==""||this.Genre==""||this.Released_Year==0||this.Featuring==""||this.Seasons==""||this.Image==""||this.Plot==""||this.Type==""){
       alert("Empty fields cannot be taken !")
@@ -62,9 +64,6 @@ Plot:string="";
       this.es.editingDrama(this.id,data).subscribe(
         {
           next:(data:any)=>{
-            // this.router.navigateByUrl('/adminside/home/existingDramas', {skipLocationChange: false}).then(() => {
-            //   this.router.navigate(['existingDramas'],{relativeTo:this.ar});
-            // });
             alert("Drama has been edited successfully !");
             this.Title="";
             this.Language="",
@@ -74,6 +73,7 @@ Plot:string="";
             this.Plot="",
             this.Released_Year=0;
             this.Seasons="";
+            this.dialogref.close(data);
           },
           error:()=>alert("Some error in editing drama")
         }

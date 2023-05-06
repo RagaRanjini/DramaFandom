@@ -15,7 +15,11 @@ import { ReviewsComponent } from './common/reviews/reviews.component';
 import { ReviewPipe } from './pipes/review.pipe';
 import { FooterComponent } from './common/footer/footer.component';
 import { TopchartComponent } from './common/topchart/topchart.component';
-
+import { TranslateLoader,TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http,'./assets/i18n/','.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,14 @@ import { TopchartComponent } from './common/topchart/topchart.component';
     MaterialModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]

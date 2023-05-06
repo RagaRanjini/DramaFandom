@@ -49,11 +49,39 @@ export class ExistingdramasComponent implements OnInit {
       )
   }
   editform(id:any){
-    this.dialog.open(EditComponent,{data:{thisid:id}})
+    const dialogref=this.dialog.open(EditComponent,{data:{thisid:id}})
     // console.log(id)
+    dialogref.afterClosed().subscribe(editedData => {
+      console.log("closed")
+      if (editedData) {
+        // Update the dramas array with the edited data
+        this.dramas = this.dramas.map((data:any) => {
+          if(data.id == id){
+            return editedData;
+          }
+          return data;
+        });
+      }
+    });
   }
   delete(id:any,Title:string){
-    this.dialog.open(DeleteComponent,{data:{thisid:id,thisTitle:Title}})
+    const deleteDialog=this.dialog.open(DeleteComponent,{data:{thisid:id,thisTitle:Title}})
+    deleteDialog.afterClosed().subscribe(
+      {
+        next:()=>{
+          this.gs.getDramas().subscribe(
+            {
+              next:(data:any)=>{
+                this.dramas=data,
+                this.options.push(...data.map((item: any) => item.Title));
+              },
+              error:()=>this.dramas=[]
+            }
+            )
+        },
+        error:()=>alert("Error occured !")
+      }
+    )
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component ,Inject} from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { DramasGetServicesService } from 'src/app/services/dramas-get-services.service';
 import { EditingService } from 'src/app/services/editing.service';
 
@@ -13,7 +13,7 @@ export class EditbuzzComponent {
   image:string="";;
   id:number=this.data.thisid;
   currentBuzz:any;
-constructor(@Inject(MAT_DIALOG_DATA) public data: any,private gs:DramasGetServicesService,private es:EditingService){
+constructor(@Inject(MAT_DIALOG_DATA) public data: any,private gs:DramasGetServicesService,private es:EditingService,public dialogref: MatDialogRef<EditbuzzComponent>){
   this.gs.getLatestBuzzbyId(data.thisid).subscribe(
     {
       next:(thisbuzz:any)=>{
@@ -39,6 +39,7 @@ editBuzz(){
           alert("Buzz edited !");
           this.news="";
           this.image="";
+          this.dialogref.close(buzzdata)
         },
         error:()=>alert("Error in editing --try again!")
       }

@@ -21,7 +21,7 @@ existingdramas(){
   this.router.navigate(['existingDramas'],{relativeTo:this.ar})
 }
 postNewDrama(){
-  this.dialog.open(NewdramaComponent)
+  this.dialog.open(NewdramaComponent);
 }
 postNewBuzz(){
   this.dialog.open(NewbuzzComponent)

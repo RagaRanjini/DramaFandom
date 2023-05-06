@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthenticationService } from '../services/authentication.service';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-authentication',
   templateUrl: './authentication.component.html',
@@ -9,13 +10,20 @@ import { Router } from '@angular/router';
 })
 export class AuthenticationComponent {
   UsersList:any;
-  constructor(private as:AuthenticationService,private fb:FormBuilder, private router:Router){
+  currentlang:string="English"
+  languages:any=[
+    {name:"English",value:"English"},
+    {name:"French",value:"French"}
+  ]
+  constructor(private as:AuthenticationService,private fb:FormBuilder, private router:Router,private ts:TranslateService){
+    this.ts.use(this.currentlang)
     // validations
     this.signupform = this.fb.group({
       email:['',[Validators.required, Validators.pattern("^[A-Za-z][A-Za-z_\.0-9]+@[A-Za-z]+[\.][A-Za-z]{2,5}$")]],
       username: ['', [Validators.required, Validators.minLength(5), Validators.pattern("^[a-z0-9]+$")]],
       password: ['', [Validators.required, Validators.minLength(6),Validators.pattern("^[0-9]{6,6}")]]
     });
+    
     //storing list of users
     this.as.getUsersList().subscribe(
       {
@@ -26,6 +34,9 @@ export class AuthenticationComponent {
         error:()=>this.UsersList=[]
       }
     ) 
+  }
+  changelang():void{
+    this.ts.use(this.currentlang)
   }
   signin:boolean=true; //currently login form
   signup:boolean=false;
