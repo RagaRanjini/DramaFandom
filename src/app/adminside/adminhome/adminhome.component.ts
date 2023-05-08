@@ -30,4 +30,8 @@ postNewBuzz(){
 changeTopchart(){
   this.router.navigate(['topchart'],{relativeTo:this.ar})
 }
+logout(){
+  sessionStorage.clear();
+  location.reload();
+}
 }
