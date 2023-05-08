@@ -12,6 +12,12 @@ export class AppComponent {
   ngAfterViewInit(){
     if(!this.as.loginstatus()){
       this.router.navigate(['authentication'])
+    }else{
+      if(this.as.usertype=="admin"){
+        this.router.navigate(['adminside/home'])
+      }else{
+        this.router.navigate(['userside/home'])
+      }
     }
   }
 }

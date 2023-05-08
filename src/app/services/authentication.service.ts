@@ -8,7 +8,20 @@ import { HttpHeaders } from '@angular/common/http';
 export class AuthenticationService {
   httpOptions:any;
   status:boolean=false;
-  constructor(private http:HttpClient) { }
+  username:any;
+  email:any;
+  usertype:any;
+  constructor(private http:HttpClient) { 
+    let username=sessionStorage.getItem('username');
+    let email=sessionStorage.getItem('email');
+    let usertype=sessionStorage.getItem('type')
+    if(username&&email){
+      this.status=true;
+      this.username=username;
+      this.email=email;
+      this.usertype=usertype;
+    }
+  }
   loginstatus():boolean{
     return this.status;
   }

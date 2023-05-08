@@ -53,6 +53,9 @@ export class AuthenticationComponent {
   userfound:boolean=false;
   usertype:any;
   error:any;
+  getusername(){
+    return sessionStorage.getItem('username');
+  }
   existinguser(){
     this.error=[];
     //checks for empty fields
@@ -63,8 +66,11 @@ export class AuthenticationComponent {
       for (let user of this.UsersList) {
         if(user.email==this.email&&user.password==this.password){
           this.usertype=user.type;
-          alert("You are logged in");
-          this.userfound=true
+          this.userfound=true;
+          sessionStorage.setItem('email',user.email)
+          sessionStorage.setItem('username',user.username)
+          sessionStorage.setItem('usertype',user.type)
+          alert("Hello "+this.getusername()+"! You are logged in");
         }
       }
       //according to the type of user, routing happens

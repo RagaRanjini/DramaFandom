@@ -20,13 +20,7 @@ export class DramasGetServicesService {
     getLatestBuzzbyId(id:number):Observable<any>{
       return this.http.get("http://localhost:4500/latestBuzz/"+id)
     }
-    // getKoreanTitles():Observable<any>{
-    //   return this.http.get("http://localhost:4500/KoreanTitles");
-    // }
-    // getChineseTitles():Observable<any>{
-    //   return this.http.get("http://localhost:4500/ChineseTitles");
-    // }
-    // getJapaneseTitles():Observable<any>{
-    //   return this.http.get("http://localhost:4500/JapaneseTitles");
-    // }
+    getChats():Observable<any>{
+      return this.http.get("http://localhost:4500/Chats");
+    }
 }

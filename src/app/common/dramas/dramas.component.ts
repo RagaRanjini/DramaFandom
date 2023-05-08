@@ -35,4 +35,8 @@ export class DramasComponent{
       }
     )
   }
+  //get username for alert
+  getUsername(){
+    return sessionStorage.getItem('username');
+  }
 }

@@ -30,4 +30,10 @@ export class PostServicesService {
     })
     return this.hp.post("http://localhost:4500/latestBuzz",data,this.httpOptions);
   }
+  postChats(chat:any):Observable<any>{
+    this.httpOptions =  new HttpHeaders({
+      'Content-Type':  'application/json',
+    })
+    return this.hp.post("http://localhost:4500/Chats",chat,this.httpOptions);
+  }
 }

@@ -15,6 +15,7 @@ export class ViewComponent {
   currentid:any;
   Form:any;
   reviews:any;
+  panelOpenState = false;
 constructor(private fb:FormBuilder,private ar:ActivatedRoute,private gs:DramasGetServicesService,private ps:PostServicesService){
   //model based approach, validating review form
   this.Form = this.fb.group({

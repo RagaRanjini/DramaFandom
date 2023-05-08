@@ -2,11 +2,25 @@
     <div class="col">
         <!-- image of that id drama -->
         <img src="http://localhost/DramaFandom/{{details.Image}}" alt="image">
-        <hr>
         <!-- that drama -- featuring and plot details -->
+        <hr>
         <p><b>Featuring: {{details.Featuring}}</b></p>
         <hr>
-        <p>{{details.Plot}}</p>
+        <!-- <p>{{details.Plot}}</p> -->
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Synopsis
+                </mat-panel-title>
+                <mat-panel-description>
+                  <p>{{details.Title}}</p>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{details.Plot}}</p>
+            </mat-expansion-panel>
+          </mat-accordion>
     </div>
     <div class="col">
         <!-- reviews heading -->

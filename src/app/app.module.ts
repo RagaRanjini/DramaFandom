@@ -17,6 +17,9 @@ import { FooterComponent } from './common/footer/footer.component';
 import { TopchartComponent } from './common/topchart/topchart.component';
 import { TranslateLoader,TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NotificationsComponent } from './common/notifications/notifications.component';
+import { ChatComponent } from './common/notifications/chat/chat.component';
+import { NewreleasesComponent } from './common/notifications/newreleases/newreleases.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
 }
@@ -30,7 +33,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReviewsComponent,
     ReviewPipe,
     FooterComponent,
-    TopchartComponent
+    TopchartComponent,
+    NotificationsComponent,
+    ChatComponent,
+    NewreleasesComponent
   ],
   imports: [
     BrowserModule,

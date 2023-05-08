@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <h1>Drama Fandom</h1>
+</mat-toolbar>
+<mat-tab-group>
+    <mat-tab label="New Releases">
+        <app-newreleases *ngFor="let drama of newReleases" [data]="drama"></app-newreleases>
+    </mat-tab>
+    <mat-tab label="Lets Chat">
+        <app-chat></app-chat>
+    </mat-tab>
+</mat-tab-group>
+  

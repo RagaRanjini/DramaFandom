@@ -2,7 +2,7 @@ h1{
     color:white;
 }
 .homebutton{
-    margin-left: 630px;
+    margin-left: 570px;
 }
 .dramasbutton{
     margin-left: 20px;
@@ -16,6 +16,9 @@ h1{
 .postbutton{
     margin-left: 20px;
     border-radius: 50%;
+}
+.notification{
+    margin-left: 20px;
 }
 /* mat-toolbar{
     background-color: #613fe8;

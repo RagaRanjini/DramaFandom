@@ -1,0 +1,62 @@
+.inputbox{
+    width: 97%;
+    height: 85px;
+    border-radius: 20px;
+    flex: 90%;
+    margin-left: 45px;
+}
+.sendbutton{
+    margin-top: 10px;
+    flex: 10%;
+    margin-left: 40px;
+}
+.lower{
+    margin: 40px;
+    display: flex;
+}
+.container{
+    overflow-y: auto;
+    height: 370px;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+.talk-bubble {
+	margin: 25px;
+    margin-left: 40px;
+  display: inline-block;
+  position: relative;
+	width: 400px;
+	height: auto;
+	background-color: lightyellow;
+}
+.chat{
+    padding-left: 10px;
+    margin: 10px;
+}
+.mytext{
+  width: 400px;
+  height: auto;
+  background-color: #055ca3;
+  margin-left: 55%;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 1px;
+  color: white;
+}
+.username1{
+  font-size: small;
+  color: darkblue;
+  margin-left: 5%;
+}
+
+

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="content" *ngFor="let chat of history">
+        <div class="talk-bubble tri-right left-top" *ngIf="chat.Email!=thisuser">
+            <p class="username1">{{chat.Username}}</p>
+            <div class="talktext">
+                <p class="chat">{{chat.Chat}}</p>
+            </div>
+        </div>
+        <div class="mytext" *ngIf="chat.Email==thisuser">
+            <div class="talktext">
+                <p class="chat">{{chat.Chat}}</p>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="row" class="lower">
+    <div class="col-10">
+        <mat-form-field appearance="fill" class="inputbox">
+            <mat-label>Message</mat-label>
+            <input matInput [(ngModel)]="chat">
+        </mat-form-field>
+    </div>
+    <div class="col">
+        <button mat-raised-button (click)="send()" class="sendbutton" color="primary">send</button>
+    </div>
+</div>

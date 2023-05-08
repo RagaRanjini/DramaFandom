@@ -68,9 +68,9 @@ a p{
     padding: 20px;
 }
 .fade-in-text {
-    font-family: 'Brush Script';
+    /* font-family: 'Brush Script'; */
     animation: fadeIn 8s;
-    font-size: xx-large;
+    font-size: x-large;
     margin-top: 20px;
     padding: 20px;
   }
@@ -86,4 +86,9 @@ a p{
     margin-left: 80%;
     width: 100px;
     height: 30px;
+}
+img{
+    width: 130px;
+    height: 90px;
+    margin-left: 40%;
 }
