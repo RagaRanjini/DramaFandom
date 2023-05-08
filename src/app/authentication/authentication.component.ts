@@ -13,7 +13,10 @@ export class AuthenticationComponent {
   currentlang:string="English"
   languages:any=[
     {name:"English",value:"English"},
-    {name:"French",value:"French"}
+    {name:"French",value:"French"},
+    {name:"Korean",value:"Korean"},
+    {name:"Chinese",value:"Chinese"},
+    {name:"Japanese",value:"Japanese"}
   ]
   constructor(private as:AuthenticationService,private fb:FormBuilder, private router:Router,private ts:TranslateService){
     this.ts.use(this.currentlang)
@@ -77,8 +80,9 @@ export class AuthenticationComponent {
       if(this.userfound==true){
         if(this.usertype=="user"){
           this.router.navigate(['userside/home'])
-        }else{
-          this.router.navigate(['adminside/home'])
+        }
+        if(this.usertype=="admin"){
+          this.router.navigate(['adminside/adminhome'])
         }
       }else{
         //if login credentials is not found

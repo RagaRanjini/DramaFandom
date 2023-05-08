@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PostServicesService } from 'src/app/services/post-services.service';
 
 @Component({
@@ -19,7 +20,7 @@ Type:string="";
 Seasons:string="";
 Likes:number=0;
 Plot:string="";
-constructor(private pd:PostServicesService,public dialogref: MatDialogRef<NewdramaComponent>){}
+constructor(private pd:PostServicesService,public dialogref: MatDialogRef<NewdramaComponent>,private router:Router,private ar:ActivatedRoute){}
 
 postDrama(){
   // console.log(this.Title);
@@ -42,7 +43,6 @@ postDrama(){
     this.pd.postingDrama(data).subscribe(
       {
         next:(data:any)=>{
-          alert("Drama has been posted successfully !");
           this.Title="";
           this.Language="",
           this.Genre="",
@@ -51,7 +51,7 @@ postDrama(){
           this.Plot="",
           this.Released_Year=0,
           this.Seasons="",
-          this.dialogref.close()
+          this.dialogref.close();
         },
         error:()=>alert("Some error in posting new drama")
       }

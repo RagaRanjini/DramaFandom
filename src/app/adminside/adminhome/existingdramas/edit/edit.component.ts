@@ -64,7 +64,6 @@ Plot:string="";
       this.es.editingDrama(this.id,data).subscribe(
         {
           next:(data:any)=>{
-            alert("Drama has been edited successfully !");
             this.Title="";
             this.Language="",
             this.Genre="",

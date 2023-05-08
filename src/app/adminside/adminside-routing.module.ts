@@ -11,7 +11,7 @@ import { AdminlatestbuzzComponent } from './adminhome/adminlatestbuzz/adminlates
 
 const routes: Routes = [
   {
-  path:"home",component: AdminhomeComponent,
+  path:"adminhome",component: AdminhomeComponent,
   children: [
     {
       path:"",
