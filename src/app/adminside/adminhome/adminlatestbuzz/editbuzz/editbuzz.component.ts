@@ -36,7 +36,6 @@ editBuzz(){
     this.es.editingBuzz(this.id,buzzdata).subscribe(
       {
         next:(buzzdata:any)=>{
-          alert("Buzz edited !");
           this.news="";
           this.image="";
           this.dialogref.close(buzzdata)

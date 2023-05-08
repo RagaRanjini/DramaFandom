@@ -82,7 +82,7 @@ export class AuthenticationComponent {
           this.router.navigate(['userside/home'])
         }
         if(this.usertype=="admin"){
-          this.router.navigate(['adminside/adminhome'])
+          this.router.navigate(['adminside/home'])
         }
       }else{
         //if login credentials is not found

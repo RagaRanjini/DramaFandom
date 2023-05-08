@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { PostServicesService } from 'src/app/services/post-services.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { PostServicesService } from 'src/app/services/post-services.service';
 export class NewbuzzComponent {
   news:string="";
   image:string="";
-  constructor(private ps:PostServicesService){}
+  constructor(private ps:PostServicesService,public dialog:MatDialogRef<NewbuzzComponent>){}
 postBuzz(){
   if(this.news==""||this.image==""){
     alert("Empty data cannot be posted !")
@@ -21,9 +22,9 @@ postBuzz(){
     this.ps.postingBuzz(data).subscribe(
       {
         next:(data:any)=>{
-          alert("New Buzz posted !");
           this.news="";
           this.image="";
+          this.dialog.close();
         },
         error:()=>alert("Some error occured --try later.")
       }

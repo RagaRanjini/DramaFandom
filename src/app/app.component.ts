@@ -14,7 +14,7 @@ export class AppComponent {
       this.router.navigate(['authentication'])
     }else{
       if(this.as.usertype=="admin"){
-        this.router.navigate(['adminside/adminhome'])
+        this.router.navigate(['adminside/home'])
       }else{
         this.router.navigate(['userside/home'])
       }
