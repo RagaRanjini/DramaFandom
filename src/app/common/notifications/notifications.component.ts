@@ -20,12 +20,12 @@ export class NotificationsComponent {
       }
     )
   }
-  gotoHome(){
-    let user= sessionStorage.getItem('type');
-    if(user=="user"){
-      this.router.navigate(['userside/home'])
-    }else{
-      this.router.navigate(['adminside/home'])
-    }
-  }
+  // gotoHome(){
+  //   let user= sessionStorage.getItem('type');
+  //   if(user=="user"){
+  //     this.router.navigate(['userside/home'])
+  //   }else{
+  //     this.router.navigate(['adminside/home'])
+  //   }
+  // }
 }

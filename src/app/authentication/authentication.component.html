@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="accent">
     <h1>Drama Fandom</h1>
     <!-- <button mat-button [matMenuTriggerFor]="menu"  class="menu"><mat-icon>language</mat-icon></button>
     <mat-menu #menu="matMenu" [(ngModel)]="currentlang" (change)="changelang()">
@@ -21,13 +21,13 @@
             <!-- template based approach -->
             <div>
                 <input type="email" placeholder="Email ID" [(ngModel)]="email" >
-                <input type="text" placeholder="Password" [(ngModel)]="password" >
+                <input type="password" placeholder="Password" [(ngModel)]="password" >
                 <div *ngIf="error.length>0">
                     <p *ngFor="let x of error">{{x}}</p>
                 </div> 
                 <a href="#"><p>forgot password</p></a>
                 <br><br><br>
-                <button mat-raised-button color="primary" class="button" type="submit" (click)="existinguser()">{{"AuthenticationPage.signin"|translate}}</button>
+                <button class="button" type="submit" (click)="existinguser()">{{"AuthenticationPage.signin"|translate}}</button>
             </div>
         </mat-card-content>
     </mat-card>
@@ -44,17 +44,17 @@
                 <div *ngIf='signupform.controls.username.hasError("required")'><p>Should be filled</p></div>
                 <div *ngIf='signupform.controls.username.hasError("minlength")'><p>Atleast five Characters long</p></div>
                 <div *ngIf='signupform.controls.username.hasError("pattern")'><p>Use lowercase alphabets & numbers</p></div>
-                <input type="text" placeholder="Password" formControlName="password">
+                <input type="password" placeholder="Password" formControlName="password">
                 <div *ngIf='signupform.controls.password.hasError("required")'><p>Should be filled</p></div>
                 <div *ngIf='signupform.controls.password.hasError("minlength")'><p>Must be a 6 digit password</p></div>
-                <button mat-raised-button color="primary" class="button"type="submit">{{"AuthenticationPage.signup"|translate}}</button>
+                <button class="button"type="submit">{{"AuthenticationPage.signup"|translate}}</button>
             </form>
         </mat-card-content>
     </mat-card> 
     </div>
     <div class="column2">
-        <h1 class="text" [style.color]="'#3f51b5'">{{"AuthenticationPage.pink"|translate}}</h1>
-        <p class="fade-in-text" [style.color]="'black'">{{"AuthenticationPage.white"|translate}}</p>
-        <img src="http://localhost/DramaFandom/dots.gif" alt="gif">
+        <h1 class="text" [style.color]="'#fc0390'">{{"AuthenticationPage.pink"|translate}}</h1>
+        <p class="fade-in-text" [style.color]="'white'">{{"AuthenticationPage.white"|translate}}</p>
+        <!-- <img src="http://localhost/DramaFandom/dots.gif" alt="gif"> -->
     </div> 
 </body>

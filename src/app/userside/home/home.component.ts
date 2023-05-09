@@ -40,6 +40,10 @@ changeJdramas(){
 changeTopchart(){
   this.router.navigate(['topchart'],{relativeTo:this.ar})
 }
+notifications(){
+  // console.log("notify")
+  this.router.navigate(['notifications'],{relativeTo:this.ar})
+}
 
 logout(){
   sessionStorage.clear();

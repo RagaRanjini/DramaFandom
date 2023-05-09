@@ -1,7 +1,7 @@
-<mat-toolbar color="primary">
+<!-- <mat-toolbar color="primary">
     <h1>Drama Fandom</h1>
     <button mat-button (click)="gotoHome()" class="home">Home</button>
-</mat-toolbar>
+</mat-toolbar> -->
 <mat-tab-group>
     <mat-tab label="New Releases">
         <app-newreleases *ngFor="let drama of newReleases" [data]="drama"></app-newreleases>

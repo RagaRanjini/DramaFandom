@@ -22,7 +22,7 @@
           {{theme}}
         </button>
     </mat-menu>
-    <button mat-icon-button [ngStyle]="theme.notification" routerLink="/notifications">
+    <button mat-icon-button [ngStyle]="theme.notification" (click)="notifications()">
       <mat-icon>notifications</mat-icon>
     </button>
     <button mat-button (click)="logout()" [ngStyle]="theme.logout"><mat-icon>exit_to_app</mat-icon>

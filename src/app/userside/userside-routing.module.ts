@@ -7,6 +7,7 @@ import { KdramasComponent } from './home/kdramas/kdramas.component';
 import { CdramasComponent } from './home/cdramas/cdramas.component';
 import { JdramasComponent } from './home/jdramas/jdramas.component';
 import { TopchartComponent } from '../common/topchart/topchart.component';
+import { NotificationsComponent } from '../common/notifications/notifications.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,11 @@ const routes: Routes = [
     {
       path: "topchart",
       component: TopchartComponent
+    }
+    ,
+    {
+      path: "notifications",
+      component: NotificationsComponent
     }
   ]
   }

@@ -7,6 +7,7 @@ import { TopchartComponent } from '../common/topchart/topchart.component';
 import { ExistingdramasComponent } from './adminhome/existingdramas/existingdramas.component';
 import { EditComponent } from './adminhome/existingdramas/edit/edit.component';
 import { AdminlatestbuzzComponent } from './adminhome/adminlatestbuzz/adminlatestbuzz.component';
+import { NotificationsComponent } from '../common/notifications/notifications.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
     {
       path: "latestbuzz",
       component: AdminlatestbuzzComponent
+    },
+    {
+      path: "notifications",
+      component: NotificationsComponent
     }
   ]
   }

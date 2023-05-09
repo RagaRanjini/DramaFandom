@@ -7,7 +7,7 @@ import { NotificationsComponent } from './common/notifications/notifications.com
 const routes: Routes = [
   {path:"authentication",component: AuthenticationComponent},
   {path:"Dramas/:id",component: ViewComponent},
-  {path:"notifications",component: NotificationsComponent},
+  // {path:"notifications",component: NotificationsComponent},
   {path:"userside",
   loadChildren:() => import('./userside/userside.module').then(m => m.UsersideModule)},
   {path:"adminside",loadChildren: 

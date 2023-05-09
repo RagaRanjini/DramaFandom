@@ -12,12 +12,20 @@ chat:any;
 history:any;
 thisuser=sessionStorage.getItem('email');
 constructor(private ps:PostServicesService,private gs:DramasGetServicesService){
-  this.gs.getChats().subscribe(
-    {
-      next:(data:any)=>this.history=data,
-      error:()=>this.history=[]
-    }
-  )
+  // this.gs.getChats().subscribe(
+  //   {
+  //     next:(data:any)=>this.history=data,
+  //     error:()=>this.history=[]
+  //   }
+  // )
+  setInterval(()=>{
+    this.gs.getChats().subscribe(
+      {
+        next:(data:any)=>this.history=data,
+        error:()=>this.history=[]
+      }
+    )
+  },1000)
 }
 send(){
   if(this.chat==undefined||this.chat==""){

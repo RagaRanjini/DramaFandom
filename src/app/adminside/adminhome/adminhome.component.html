@@ -16,7 +16,7 @@
           <button (click)="postNewDrama()" mat-menu-item>Dramas</button>
           <button (click)="postNewBuzz()" mat-menu-item>LatestBuzz</button>
         </mat-menu>
-        <button mat-icon-button class="notification" routerLink="/notifications">
+        <button mat-icon-button class="notification" (click)="notifications()">
           <mat-icon>notifications</mat-icon>
         </button>
         <button mat-button (click)="logout()"><mat-icon>exit_to_app</mat-icon>
