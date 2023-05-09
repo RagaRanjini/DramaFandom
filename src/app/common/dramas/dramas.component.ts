@@ -11,17 +11,9 @@ export class DramasComponent{
   //from dramaspage, importing styles
   styles=slideshow
   //image urls for slidedhow
-  imageUrls: string[] = ['http://localhost/DramaFandom/slide1.webp', 'http://localhost/DramaFandom/slide2.webp', 'http://localhost/DramaFandom/slide3.jpg','http://localhost/DramaFandom/slide4.png','http://localhost/DramaFandom/slide5.webp'];
+  // imageUrls: string[] = ['http://localhost/DramaFandom/slide1.webp', 'http://localhost/DramaFandom/slide2.webp', 'http://localhost/DramaFandom/slide3.jpg','http://localhost/DramaFandom/slide4.png','http://localhost/DramaFandom/slide5.webp'];
+  imageUrls:any;
   currentImageIndex: number = 0;
-//currently first image for slideshow and iterating the array and moving the images for an interval of 2000ms
-  ngOnInit() {
-    setInterval(() => {
-      this.currentImageIndex++;
-      if (this.currentImageIndex >= this.imageUrls.length) {
-        this.currentImageIndex = 0;
-      }
-    }, 2000);
-  }
 
   //get latestBuzz from Database ---parent component
   latestBuzzList:any;
@@ -34,6 +26,20 @@ export class DramasComponent{
         error:()=>this.latestBuzzList=[]
       }
     )
+    this.gs.getSlides().subscribe(
+      {
+        next:(data:any)=>{
+          this.imageUrls=data;
+        },
+        error:()=>this.imageUrls=[]
+      }
+    )
+    setInterval(() => {
+      this.currentImageIndex++;
+      if (this.currentImageIndex >= this.imageUrls.length) {
+        this.currentImageIndex = 0;
+      }
+    }, 2000);
   }
   //get username for alert
   getUsername(){

@@ -23,4 +23,7 @@ export class DramasGetServicesService {
     getChats():Observable<any>{
       return this.http.get("http://localhost:4500/Chats");
     }
+    getSlides():Observable<any>{
+      return this.http.get("http://localhost:4500/slideshow")
+    }
 }
