@@ -1,0 +1,494 @@
+{
+  "Dramas": [
+    {
+      "Title": "The Heirs",
+      "Language": "Korean",
+      "Genre": "Teen Drama",
+      "Image": "heirs.webp",
+      "Featuring": "Lee Min-ho and Park Shin-hye",
+      "Released_Year": 2013,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 2,
+      "Plot": "The series follows a group of wealthy, privileged high school students as they are about to take over their families' business empires, overcoming difficulties and growing every step of the way.",
+      "id": 1
+    },
+    {
+      "Title": "True Beauty ",
+      "Language": "Korean",
+      "Genre": "Teen Drama",
+      "Image": "truebeauty.jpg",
+      "Featuring": "Cha Eun-Woo, Hwang In-youp and Moon Ga-Young",
+      "Released_Year": 2020,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 12,
+      "Plot": "This series is about Lim Ju-kyung, a high school student who always had a complex about her appearance since she was young. To hide her bare face, she started to wear heavy make-up. This plot follows Ju-kyung as she navigates her daily life and goal of becoming a cosmetologist.",
+      "id": 2
+    },
+    {
+      "Title": "Boys Over Flowers",
+      "Language": "Korean",
+      "Genre": "Teen Drama",
+      "Image": "bob.webp",
+      "Featuring": "Lee Min-ho, Ku Hye-Sun, Kim Hyun-joong, Kim Bum, Kim Joon and Kim So-eun",
+      "Released_Year": 2009,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 2,
+      "Plot": "The series tells a story of a working-class girl who gets tangled up in the lives of a group of wealthy young men in her elite high school. From its star-studded cast to international ratings, this iconic Korean drama has become a timeless classic. ",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "Title": "It's Okay to Not Be Okay",
+      "Language": "Korean",
+      "Genre": "Romance",
+      "Image": "ok.jpg",
+      "Featuring": " Kim Soo-hyun and Seo Yea-ji",
+      "Released_Year": 2020,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 3,
+      "Plot": "The series follows Ko Moon-young, an antisocial children's book writer who moves to her hometown to pursue her love interest Moon Gang-tae, a psych ward caretaker, who has been dedicating his life to taking care of his autistic older brother Moon Sang-tae."
+    },
+    {
+      "id": 5,
+      "Title": "A Love so Beautiful",
+      "Language": "Chinese",
+      "Genre": "Romance",
+      "Image": "alsb.webp",
+      "Featuring": "Hu Yi Tian, Shen Yue, Gao Zhi Ting and Wang Zi Wei",
+      "Released_Year": 2017,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 0,
+      "Plot": "Chen Xiao Xi (Shen Yue) and Jiang Chen (Hu Yi Tian) are high school friends and neighbors who grew up together. How will the realities of life shape the friendships and love of these young adults?"
+    },
+    {
+      "Title": "He is Psychometric",
+      "Language": "Korean",
+      "Genre": "Thriller",
+      "Image": "psychometric.webp",
+      "Featuring": "Park Jin-young, Shin Ye-eun, Kim Kwon and Kim Da-som",
+      "Released_Year": 2019,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 3,
+      "Plot": "A boy who is able to read the secrets of those whose skin comes into contact with him, and a girl who does everything she can to hide her pain. In the drama, the boy and girl will meet and try to fix, heal, grow, and love from the small and big occurrences that happen in their lives.",
+      "id": 6
+    },
+    {
+      "Title": "Alice in Borderland S1",
+      "Language": "Japanese",
+      "Genre": "Thriller",
+      "Image": "alice.jpg",
+      "Featuring": "Kento Yamazaki, Tao Tsuchiya and Nijirô Murakami",
+      "Released_Year": 2020,
+      "Type": "old",
+      "Seasons": "2",
+      "Likes": 1,
+      "Plot": "Alice in Borderland tells the story of young Ryohei Arisu (Kento Yamazaki) after he is transported to a parallel universe in which he is forced to play games of life or death in an emptied-out version of Tokyo.",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "Title": "Alchemy of Souls",
+      "Language": "Korean",
+      "Genre": "Fantasy",
+      "Image": "aos.avif",
+      "Featuring": "Lee Jae-wook, Go Yoon-Jung and Jung So-Min",
+      "Released_Year": 2022,
+      "Type": "old",
+      "Seasons": "2",
+      "Likes": 1,
+      "Plot": "Set in a fictional country called Daeho that does not exist in history or on maps, it is about the love and growth of young mages as they overcome their twisted fates due to a forbidden magic spell known as the 'alchemy of souls', which allows souls to switch bodies."
+    },
+    {
+      "id": 9,
+      "Title": "Love in Time",
+      "Language": "Chinese",
+      "Genre": "Romance",
+      "Image": "loveintime.webp",
+      "Featuring": "Ren Yan Kai and Serena Cheng",
+      "Released_Year": 2020,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 0,
+      "Plot": "Jianan Su (Xiaomeng Cheng) is an unknown novelist who falls into a family inheritance crisis. In order to continue her career, she has no choice but agrees with a 'contract marriage' with Boyan Lu (Yankai Ren). They start living under the same roof and don't seem to occur to them that the disaster has begun..."
+    },
+    {
+      "Title": "Skate Into Love",
+      "Language": "Chinese",
+      "Genre": "Romance",
+      "Image": "skate.webp",
+      "Featuring": "Steven Zhang and Wu Qian",
+      "Released_Year": 2020,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 7,
+      "Plot": "A story about two childhood classmates, Li Yu Bing (Steven Zhang) and Tang Xue (Wu Qian), who share the same love for ice-skating. ",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "Title": "Hi! School-Love On",
+      "Language": "Korean",
+      "Genre": "Fantasy",
+      "Image": "school.webp",
+      "Featuring": " Kim Sae-ron and Nam Woo-hyun",
+      "Released_Year": 2014,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 5,
+      "Plot": "Hi! School: Love On is a teen fantasy romance series about an angel who has no choice but to become a human after unintentionally saving a male student in danger."
+    },
+    {
+      "Title": "Welcome to Waikiki",
+      "Language": "Korean",
+      "Genre": "Comedy",
+      "Image": "waikiki.jpg",
+      "Featuring": " Lee Yi-kyung and Kim Jung-Hyun",
+      "Released_Year": 2018,
+      "Type": "old",
+      "Seasons": "2",
+      "Likes": 0,
+      "Plot": "Kang Dong-Goo (Kim Jung-Hyun) dreams of becoming a movie director, but he is cynical due to bad luck. Cheon Joon-Ki (Lee Yi-Kyung) wanted to follow in his father's footsteps and become an actor, but he is now just a minor actor. Bong-Doo-Sik (Son Seung-Won) came to Seoul to become a scenario writer, but things have not been easy for him.  These 3 men run the guest house Waikiki in Itaewon, South Korea. Their guest house is facing bankruptcy and then a mysterious baby and single mother appear at Waikiki.",
+      "id": 13
+    },
+    {
+      "Title": "Alice in Borderland S2",
+      "Language": "Japanese",
+      "Genre": "Thriller",
+      "Image": "alices2.avif",
+      "Featuring": "Kento Yamazaki and Tao Tsuchiya",
+      "Released_Year": 2022,
+      "Type": "old",
+      "Seasons": "2",
+      "Likes": 2,
+      "Plot": "The second season is about Arisu and Usagi coming to terms with themselves, what it means to be alive and the meaning of life. As they try to find the answers to these very difficult questions, they battle the brutal face cards to find out whether they can, in fact, go back home.",
+      "id": 14
+    },
+    {
+      "Title": "Black Cindrella",
+      "Language": "Japanese",
+      "Genre": "Teen Drama",
+      "Image": "blackcindrella.jpg",
+      "Featuring": "Riko and Kamio Fuju",
+      "Released_Year": 2021,
+      "Type": "old",
+      "Seasons": "1",
+      "Likes": 0,
+      "Plot": "Kamiya Manaha is a girl with little self-confidence. Her childhood dream was to enter the Miss Seiran Contest, a beauty pageant for high-school students. Despite seeing herself as an ordinary girl, she enters the pageant. She then meets Tachibana Keigo, a handsome, self-absorbed boy and Shimamura Sora, a mysterious transfer student. At contest time, Manaha cannot keep her excitement in, as she is just steps away from the very stage she’s dreamed about for so long.",
+      "id": 15
+    },
+    {
+      "Title": "Tale of nine tailed",
+      "Language": "Korean",
+      "Genre": "Fantasy",
+      "Image": "tale.webp",
+      "Featuring": "Dong Wook Lee and Jo Bo-Ah",
+      "Released_Year": 2020,
+      "Type": "old",
+      "Seasons": "2",
+      "Likes": 0,
+      "Plot": "Lee Yeon was once the mountain guardian spirit (nine tailed fox ). During many centuries he lives his life in human form in search for the reincarnation of his lost first love and eradicates supernatural beings that threaten the mortal world. Meanwhile, Nam Ji-A works for TVC station as a PD of documentaries.",
+      "id": 16
+    },
+    {
+      "Title": "Our Blooming Youth",
+      "Language": "Korean",
+      "Genre": "Romance",
+      "Image": "bloomingyouth.webp",
+      "Featuring": "Park Hyung Sik and  Jeon So-nee",
+      "Released_Year": 2023,
+      "Type": "new",
+      "Seasons": "1",
+      "Likes": 0,
+      "Plot": "what chance does the leads' love have of surviving when one of them is a former murder suspect and the other is a cursed prince?    A delightful combination of romance and mystery, “Our Blooming Youth” is a 2023 South Korean historical romance drama directed by Lee Jong Jae.",
+      "id": 18
+    },
+    {
+      "Title": "The Glory S1",
+      "Language": "Korean",
+      "Genre": "Thriller",
+      "Image": "glory.jpg",
+      "Featuring": "Song Hye-Kyo , Lee Do-Hyun and Lim Ji-Yeon",
+      "Released_Year": 2023,
+      "Type": "new",
+      "Seasons": "2",
+      "Likes": 1,
+      "Plot": "A high school student dreamed of one day working as an architect. She became a victim of high school violence perpetrated by her fellow students. She dropped out of high school because of the bullying. She then planned revenge on her tormentors and also the bystanders who did nothing.  That student is now an adult. She has waited for the leader of her tormentors to get married and have a child. That child is now an elementary school student. The women who was once a victim of school violence, is now the homeroom teacher of her tormentor's child. Her cruel revenge plot begins in earnest.",
+      "id": 19
+    },
+    {
+      "Title": "The Glory S2",
+      "Language": "Korean",
+      "Genre": "Thriller",
+      "Image": "glorys2.jpg",
+      "Featuring": "Song Hye-kyo, Lee Do-hyun, Lim Ji-yeon, Jung Sung-ill, and Park Sung-hoon",
+      "Released_Year": 2023,
+      "Type": "new",
+      "Seasons": "2",
+      "Likes": 0,
+      "Plot": "Moon Dong-Eun's (Song Hye-Kyo) silent fury against those students that horrifically abused her during her high school years continues to burn inside of her. She meticulously executes her plan to inflict ultimate pain on her tormenters. Meanwhile, the sudden disappearance of Son Myeong-O (Kim Gun-Woo) has gotten the attention of the police and his friends. Joo Yeo-Jeong (Lee Do-Hyun) follows Moon Dong-Eun and is willing to do anything she asks in her pursuit of revenge. Before Moon Dong-Eun begins her final moves, she offers her nemesis Park Yeon-Jin (Lim Ji-Yeon) a chance to save herself if she turns herself into the police, but Park Yeon-Jin has her own plans to stop Moon Dong-Eun. A violent and bloody game of nerves plays out between these rivals.",
+      "id": 20
+    },
+    {
+      "Title": "Tale of nine taled 1938",
+      "Language": "Korean",
+      "Genre": "Fantasy",
+      "Image": "tale2.jpg",
+      "Featuring": " Kim So-yeon and Dong Wook-Lee",
+      "Released_Year": 2023,
+      "Type": "new",
+      "Seasons": "2",
+      "Likes": 0,
+      "Plot": "An unexpected case leads Lee Yeon back in time to the year 1938 where he reencounters Ryu Hong Joo. Once a guardian spirit of the mountain in the west, she's now the owner of a high-end restaurant in the capital city of Gyeongseong. He also meets his younger brother Lee Rang. Meanwhile, another former guardian spirit and ex-friend Cheon Moo Young has become hostile. Lee Yeon struggles to return to the present, to his loved one.",
+      "id": 21
+    }
+  ],
+  "UserData": [
+    {
+      "email": "ragaranjirr@gmail.com",
+      "username": "ranjini",
+      "password": "123456",
+      "type": "user",
+      "id": 1
+    },
+    {
+      "email": "ragaranji2001@gmail.com",
+      "username": "admin",
+      "password": "123456",
+      "type": "admin",
+      "id": 2
+    },
+    {
+      "email": "suganya07@gmail.com",
+      "username": "suganya45",
+      "password": "123456",
+      "type": "user",
+      "id": 3
+    }
+  ],
+  "latestBuzz": [
+    {
+      "news": "K-pop idol IU and Lee Jong-suk are in a relationship.",
+      "image": "iurelationship.jpg",
+      "id": 1
+    },
+    {
+      "news": "Park Hyung-Sik and Park Shin-hye reunites for 'Doctor Slump'",
+      "image": "parknews.jpeg",
+      "id": 3
+    },
+    {
+      "news": "BTS' j-hope holds gun in latest army photo",
+      "image": "jinwithgun.jpg",
+      "id": 5
+    },
+    {
+      "news": "Fading star power?",
+      "image": "yangmi.jpg",
+      "id": 7
+    },
+    {
+      "news": "Dr. Romantic 3: Han Suk-kyu returns in hit medical K-drama",
+      "image": "drromantic3.webp",
+      "id": 9
+    },
+    {
+      "news": "Nam Joo Hyuk’s school bullying accuser shares alleged video of proof.",
+      "image": "namjoohyuk.webp",
+      "id": 10
+    }
+  ],
+  "Reviews": [
+    {
+      "product": "1",
+      "message": "heirs is my all time favourite... believe me u cant stop watching this...",
+      "id": 1
+    },
+    {
+      "product": "1",
+      "message": "Loved naughty park hyung sik oppa",
+      "id": 2
+    },
+    {
+      "product": "1",
+      "message": "allllllllllllllllllll loveeeeeeeeeeee",
+      "id": 3
+    },
+    {
+      "product": "2",
+      "message": "Amazing entertainment",
+      "id": 4
+    },
+    {
+      "product": "3",
+      "message": "This one is iconic. Nothing can match this drama",
+      "id": 5
+    },
+    {
+      "product": "1",
+      "message": "amazing portrayal of frienship in this drama. loved it a lot",
+      "id": 6
+    },
+    {
+      "product": "1",
+      "message": "Love between lee min ho and park shin hye is bliss",
+      "id": 7
+    },
+    {
+      "product": "1",
+      "message": "I loved the second leads the most. #fact",
+      "id": 8
+    },
+    {
+      "product": "1",
+      "message": "how can the leads be this cute....",
+      "id": 9
+    },
+    {
+      "product": "10",
+      "message": "Usually chinese drama wont be interesting. but this one is an exception. full of love",
+      "id": 10
+    },
+    {
+      "product": "7",
+      "message": "HI THIS NICE SERIES",
+      "id": 11
+    },
+    {
+      "product": "1",
+      "message": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+      "id": 12
+    },
+    {
+      "product": "4",
+      "message": "the feel is real ! whatta drama...",
+      "id": 13
+    },
+    {
+      "product": "4",
+      "message": "kim so hyunnn is just amazing",
+      "id": 14
+    },
+    {
+      "product": "4",
+      "message": "Great display of love",
+      "id": 15
+    },
+    {
+      "product": "8",
+      "message": "what a story. Great display of women power...",
+      "id": 16
+    },
+    {
+      "product": "5",
+      "message": "school students favourite for sure",
+      "id": 17
+    },
+    {
+      "product": "10",
+      "message": "good drama doog",
+      "id": 18
+    },
+    {
+      "product": "2",
+      "message": "true beauty is real beauty... ",
+      "id": 19
+    },
+    {
+      "product": "9",
+      "message": "/.........................................................................................................",
+      "id": 20
+    },
+    {
+      "product": "2",
+      "message": "Good drama with great message..!",
+      "id": 21
+    }
+  ],
+  "Chats": [
+    {
+      "Email": "ragaranjirr@gmail.com",
+      "Username": "ranjini",
+      "Chat": "Admin, are you there ?",
+      "id": 1
+    },
+    {
+      "Email": "ragaranji2001@gmail.com",
+      "Username": "admin",
+      "Chat": "Yes !!!",
+      "id": 2
+    },
+    {
+      "Email": "ragaranjirr@gmail.com",
+      "Username": "ranjini",
+      "Chat": "Tale of nine taled S2 got released but not yet updated here about that drama . please update it soon.",
+      "id": 3
+    },
+    {
+      "Email": "ragaranjirr@gmail.com",
+      "Username": "ranjini",
+      "Chat": "People are waiting for its reviews...",
+      "id": 4
+    },
+    {
+      "Email": "suganya07@gmail.com",
+      "Username": "suganya45",
+      "Chat": "Exactly... me too waiting for it from yesterday. I thought it will get updated by today atleast !",
+      "id": 5
+    },
+    {
+      "Email": "ragaranji2001@gmail.com",
+      "Username": "admin",
+      "Chat": "Sorry guys for the delay. But It will get updated by tomorrow morning. That's the update I have :)",
+      "id": 6
+    },
+    {
+      "Email": "ragaranji2001@gmail.com",
+      "Username": "admin",
+      "Chat": "hi",
+      "id": 7
+    },
+    {
+      "Email": "ragaranjirr@gmail.com",
+      "Username": "ranjini",
+      "Chat": "hlo",
+      "id": 8
+    },
+    {
+      "Email": "ragaranjirr@gmail.com",
+      "Username": "ranjini",
+      "Chat": "hii",
+      "id": 9
+    },
+    {
+      "Email": "ragaranji2001@gmail.com",
+      "Username": "admin",
+      "Chat": "Let the countdown begin for the most awaited drama \"Tale of the Nine taled\" S2",
+      "id": 10
+    },
+    {
+      "Email": "ragaranjirr@gmail.com",
+      "Username": "ranjini",
+      "Chat": "wow... much awaited one is here ! kamsamitha :)",
+      "id": 11
+    },
+    {
+      "Email": "ragaranjirr@gmail.com",
+      "Username": "ranjini",
+      "Chat": "admin ?",
+      "id": 12
+    },
+    {
+      "Email": "ragaranji2001@gmail.com",
+      "Username": "admin",
+      "Chat": "yes ",
+      "id": 13
+    }
+  ],
+  "slideshow": [ "slide1.webp", "slide2.webp","slide3.jpg","slide4.png","slide5.webp"]
+}
